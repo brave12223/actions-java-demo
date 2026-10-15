@@ -1,4 +1,4 @@
-public class Main{
+public class Welcom{
   public static void main(String args[]){        
     int var = 15;         
     System.out.println("text here"); //prints some text on a new line     
