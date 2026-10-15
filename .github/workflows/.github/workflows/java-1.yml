@@ -15,15 +15,15 @@ jobs:
           java-version: '17'
        # CI
       - name: Compile
-        run: javac Welcom.java
+        run: javac Welcome.java
       - name: Run
-        run: java Welcom
+        run: java Welcome
         # CD
       - name: Create JAR
-        run: jar --create --file Welcom.jar Welcom.class
+        run: jar --create --file Welcome.jar Welcome.class
 
       - name: Deliver application
         uses: actions/upload-artifact@v4
         with:
-          name: Welcom-App
-          path: Welcom.jar
+          name: Welcome-App
+          path: Welcome.jar
